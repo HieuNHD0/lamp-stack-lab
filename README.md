@@ -104,7 +104,8 @@ Update [index.php](https://github.com/kodekloudhub/learning-app-ecommerce/blob/1
 
 ```
 sudo sed -i 's/172.20.1.101/localhost/g' /var/www/html/index.php
-
+```
+```
               <?php
                         $link = mysqli_connect('172.20.1.101', 'ecomuser', 'ecompassword', 'ecomdb');
                         if ($link) {
@@ -122,3 +123,4 @@ sudo sed -i 's/172.20.1.101/localhost/g' /var/www/html/index.php
 ```
 curl http://localhost
 ```
+Or open http://localhost in your browser.
