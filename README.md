@@ -95,7 +95,7 @@ sudo systemctl enable httpd
 
 ```
 sudo apt install -y git
-git clone https://github.com/HieuNHD0/lamp-stack-lab.git /var/www/html/
+sudo git clone https://github.com/HieuNHD0/lamp-stack-lab.git /var/www/html/
 ```
 
 5. Update index.php
