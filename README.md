@@ -123,4 +123,4 @@ sudo sed -i 's/172.20.1.101/localhost/g' /var/www/html/index.php
 ```
 curl http://localhost
 ```
-Or open http://localhost in your browser.
+Or open http://<server_ip_address> in your browser.
