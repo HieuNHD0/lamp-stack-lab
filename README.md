@@ -9,8 +9,8 @@ Here's how to deploy it on Ubuntu systems:
 1. Install FirewallD
 
 ```
-sudo apt update
-sudo apt install firewalld
+sudo apt update -y
+sudo apt install firewalld -y
 sudo systemctl enable firewalld
 sudo systemctl start firewalld
 ```
@@ -20,7 +20,7 @@ sudo systemctl start firewalld
 1. Install MariaDB
 
 ```
-sudo apt install -y mariadb-server
+sudo apt install mariadb-server -y
 sudo systemctl start mariadb
 sudo systemctl enable mariadb
 ```
@@ -71,7 +71,7 @@ sudo mysql < db-load-script.sql
 1. Install required packages
 
 ```
-sudo apt install -y httpd php php-mysql
+sudo apt install httpd php php-mysql -y
 sudo firewall-cmd --permanent --zone=public --add-port=80/tcp
 sudo firewall-cmd --reload
 ```
@@ -87,7 +87,7 @@ sudo sed -i 's/index.html/index.php/g' /etc/httpd/conf/httpd.conf
 3. Start httpd
 
 ```
-sudo service httpd start
+sudo systemctl start httpd
 sudo systemctl enable httpd
 ```
 
@@ -95,7 +95,7 @@ sudo systemctl enable httpd
 
 ```
 sudo apt install -y git
-git clone https://github.com/kodekloudhub/learning-app-ecommerce.git /var/www/html/
+git clone https://github.com/HieuNHD0/lamp-stack-lab.git /var/www/html/
 ```
 
 5. Update index.php
